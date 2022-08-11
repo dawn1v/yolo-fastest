@@ -1,3 +1,5 @@
+#***新增：修改test文件后，支持对图片,视频，webcam的处理***
+
 # ***FastestDet: it has higher accuracy and faster speed than Yolo-fastest https://github.com/dog-qiuqiu/FastestDet***
 # :zap:Yolo-FastestV2:zap:[![DOI](https://zenodo.org/badge/386585431.svg)](https://zenodo.org/badge/latestdoi/386585431)
 ![image](https://github.com/dog-qiuqiu/Yolo-FastestV2/blob/main/img/demo.png)
