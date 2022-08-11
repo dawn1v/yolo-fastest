@@ -1,26 +1,6 @@
 #***新增：修改test文件后，支持对图片,视频，webcam的处理***
 
-# ***FastestDet: it has higher accuracy and faster speed than Yolo-fastest https://github.com/dog-qiuqiu/FastestDet***
-# :zap:Yolo-FastestV2:zap:[![DOI](https://zenodo.org/badge/386585431.svg)](https://zenodo.org/badge/latestdoi/386585431)
-![image](https://github.com/dog-qiuqiu/Yolo-FastestV2/blob/main/img/demo.png)
-* ***Simple, fast, compact, easy to transplant***
-* ***Less resource occupation, excellent single-core performance, lower power consumption***
-* ***Faster and smaller:Trade 0.3% loss of accuracy for 30% increase in inference speed, reducing the amount of parameters by 25%***
-* ***Fast training speed, low computing power requirements, training only requires 3GB video memory, gtx1660ti training COCO 1 epoch only takes 4 minutes***
-* ***算法介绍：https://zhuanlan.zhihu.com/p/400474142 交流qq群:1062122604***
-# Evaluating indicator/Benchmark
-Network|COCO mAP(0.5)|Resolution|Run Time(4xCore)|Run Time(1xCore)|FLOPs(G)|Params(M)
-:---:|:---:|:---:|:---:|:---:|:---:|:---:
-[Yolo-FastestV2](https://github.com/dog-qiuqiu/Yolo-FastestV2/tree/main/modelzoo)|24.10 %|352X352|3.29 ms|5.37 ms|0.212|0.25M
-[Yolo-FastestV1.1](https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/ModelZoo/yolo-fastest-1.1_coco)|24.40 %|320X320|4.23 ms|7.54 ms|0.252|0.35M
-[Yolov4-Tiny](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4-tiny.cfg)|40.2%|416X416|26.00ms|55.44ms|6.9|5.77M
-
-* ***Test platform Mate 30 Kirin 990 CPU，Based on [NCNN](https://github.com/Tencent/ncnn)***
-# Improvement
-* Different loss weights for different scale output layers
-* The backbone is replaced with a more lightweight shufflenetV2
-* Anchor matching mechanism and loss are replaced by YoloV5, and the classification loss is replaced by softmax cross entropy from sigmoid
-* Decouple the detection head, distinguish obj (foreground background classification), cls (category classification), reg (detection frame regression) 3 branches,  
+ 
 # How to use
 ## Dependent installation
   * PIP
